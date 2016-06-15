@@ -1,0 +1,78 @@
+header {
+    background-color:#b34949;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+nav {
+    line-height:50px;
+    background-color:#eeeeee;
+    height:535px;
+    width:150px;
+    float:left;
+    padding:5px;
+}
+footer {
+    background-color:#555;
+    color:white;
+    clear:both;
+    padding:20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+img {
+    width:300px;
+    height:200px;
+    margin-left: 330px;
+    margin-top: 50px;
+}
+.row {
+    width: 1050px;
+    height: 35px;
+    display: inline-block;
+    padding: 10px;
+}
+.row-big {
+    width: 1050px;
+    height: 100px;
+    display: inline-block;
+    padding: 10px;
+}
+.column { 
+    width: 350px;
+    height: 50px;
+    float: left;
+    /*padding: 10px;*/
+}
+select {
+    width: 150px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+.desc {
+    padding: 20px;
+    margin-left: 540px;
+    /*text-align: center;*/
+}
+#contact-heading {
+    margin-left: 582px;
+    /*text-align: center;*/
+}
