@@ -1,22 +1,29 @@
+body {
+    margin: 0;
+}
 header {
-    background-color:#b34949;
-    color:white;
-    text-align:center;
-    padding:5px;
+    background-color: #b34949;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    height: 50px;
+}
+h1 {
+    margin: 6px;
 }
 nav {
-    line-height:50px;
-    background-color:#eeeeee;
-    height:535px;
-    width:150px;
-    float:left;
-    padding:5px;
+    line-height: 50px;
+    background-color: #eee;
+    height: 574px;
+    width: 150px;
+    float: left;
+    padding: 5px;
 }
 footer {
-    background-color:#555;
-    color:white;
-    clear:both;
-    padding:20px;
+    background-color: #555;
+    color: white;
+    clear: both;
+    padding: 12px;
 }
 ul {
     list-style-type: none;
@@ -37,22 +44,24 @@ li a:hover {
     color: white;
 }
 img {
-    width:300px;
-    height:200px;
-    margin-left: 330px;
-    margin-top: 50px;
+    width: 310px;
+    height: 210px;
+    margin-left: 345px;
+    margin-top: 74px;
+}
+section {
+    margin-left: 180px;
+    margin-top: 20px;
 }
 .row {
     width: 1050px;
     height: 35px;
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
+    /*margin-left: 15px;*/
 }
 .row-big {
-    width: 1050px;
     height: 100px;
-    display: inline-block;
-    padding: 10px;
 }
 .column { 
     width: 350px;
@@ -73,6 +82,6 @@ select {
     /*text-align: center;*/
 }
 #contact-heading {
-    margin-left: 582px;
+    margin-left: 400px;
     /*text-align: center;*/
 }

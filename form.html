@@ -14,72 +14,74 @@
                 <li><a href="form.html">Contact us</a></li>
             </ul>
         </nav>
-        <div>
-            <h3 id="contact-heading">Contact Form</h3>
-        	<form>
-        		<div class="row">
-        			<div class="column">
-        				First Name:
-	        			<input type="text" name="first-name">
-        			</div>
-        			<div class="column">
-        				Last Name:
-	        			<input type="text" name="last-name">
-        			</div>
-                    <div class="column">
-                        Gender
-                        <input type="radio" name="gender" value="male" checked> Male
-                        <input type="radio" name="gender" value="female"> Female
-                    </div>  
-        		</div>
-        		<div class="row-big">
-        			Address:<br>
-	  				<!-- <input type="text" name="address"> -->
-	  				<textarea name="address" rows="4" cols="30">
-					</textarea>
-        		</div>
-        		<div class="row">
-        			<div class="column">
-        				Phone:
-						<input type="number" name="phone" size="25">
-        			</div>
-        			<div class="column">
-        				Email Id:
-	  					<input type="email" name="email" size="25">
-        			</div>
-                    <div class="column">
-                        Date of Birth:
-                        <input type="date" name="dob">
+        <section>
+            <h2 id="contact-heading">Contact Form</h2>
+            <div>
+            	<form>
+            		<div class="row">
+            			<div class="column">
+            				First Name:<br>
+    	        			<input type="text" name="first-name" size="25">
+            			</div>
+            			<div class="column">
+            				Last Name:<br>
+    	        			<input type="text" name="last-name" size="25">
+            			</div>
+                        <div class="column">
+                            Gender
+                            <input type="radio" name="gender" value="male" checked> Male
+                            <input type="radio" name="gender" value="female"> Female
+                        </div>  
+            		</div>
+            		<div class="row row-big">
+                        <div class="column">
+                			Address:<br>
+        	  				<!-- <input type="text" name="address"> -->
+        	  				<textarea name="address" rows="4" cols="30">
+        					</textarea>
+                        </div>
+                        <div class="column">
+                            Email Id:<br>
+                            <input type="email" name="email" size="25">
+                        </div>
+                        <div class="column">
+                            Phone:<br>
+                            <input type="number" name="phone">
+                        </div>
+            		</div>
+      				<div class="row">
+                        <div class="column">
+                            Date of Birth:<br>
+                            <input type="date" name="dob">
+                        </div>
+      					<div class="column">
+      						Designation:<br>
+    						<input type="text" name="designation" size="25">
+            			</div>
+            			<div class="column">
+            				Department:<br>
+    				 		<select name="department" value="Choose department">
+                                <!-- <option value="type" disabled></option> -->
+    			  				<option value="web">Web</option>
+                                <option value="ios">IOS</option>
+    			  				<option value="android">Android</option>
+                                <option value="cloud">Cloud</option>
+                                <option value="qa">QA</option>
+                                <option value="na">N/A</option>
+    						</select>
+            			</div>
+      				</div>
+                    <div class="row row-big">
+                        Enquiry:<br>
+                        <textarea name="enquiry" rows="5" cols="30"></textarea>
                     </div>
-        		</div>
-  				<div class="row">
-  					<div class="column">
-  						Designation:
-						<input type="text" name="designation">
-        			</div>
-        			<div class="column">
-        				Department:
-				 		<select name="department" value="Choose department">
-                            <!-- <option value="type" disabled></option> -->
-			  				<option value="web">Web</option>
-                            <option value="ios">IOS</option>
-			  				<option value="android">Android</option>
-                            <option value="cloud">Cloud</option>
-                            <option value="qa">QA</option>
-                            <option value="na">N/A</option>
-						</select>
-        			</div>
-  				</div>
-                <div class="row-big">
-                    Enquiry:<br>
-                    <textarea name="enquiry" rows="5" cols="30"></textarea>
-                </div>
-				<div class="row">
-					<input type="submit" name="submit" value="Submit">
-					<input type="button" onclick="location.href='main.html';" name="cancel" value="Cancel">
-				</div>
-        	</form>
-        </div>
+    				<div class="row">
+    					<input type="submit" name="submit" value="Submit">
+    					<input type="button" onclick="location.href='main.html';" name="cancel" value="Cancel">
+    				</div>
+            	</form>
+            </div>
+        </section>
 		<footer>
 			Copyright. All rights reserved.
 		</footer>
