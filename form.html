@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
 	</head>
 	<body>
 		<header>
@@ -21,28 +22,27 @@
             		<div class="row">
             			<div class="column">
             				First Name:<br>
-    	        			<input type="text" name="first-name" size="25">
+    	        			<input type="text" name="first-name" size="25" pattern="[a-zA-Z_-]*" title="Letters, - or _" required>
             			</div>
             			<div class="column">
             				Last Name:<br>
-    	        			<input type="text" name="last-name" size="25">
+    	        			<input type="text" name="last-name" size="25" required>
             			</div>
                         <div class="column">
-                            Gender
-                            <input type="radio" name="gender" value="male" checked> Male
-                            <input type="radio" name="gender" value="female"> Female
+                            Gender:
+                            <input type="radio" name="gender" id="m" value="male" checked><label for="m">Male</label> 
+                            <input type="radio" name="gender" id="f" value="female"><label for="f">Female</label> 
                         </div>  
             		</div>
             		<div class="row row-big">
                         <div class="column">
                 			Address:<br>
-        	  				<!-- <input type="text" name="address"> -->
-        	  				<textarea name="address" rows="4" cols="30">
+        	  				<textarea name="address" rows="4" cols="37">
         					</textarea>
                         </div>
                         <div class="column">
                             Email Id:<br>
-                            <input type="email" name="email" size="25">
+                            <input type="email" name="email" size="25" required>
                         </div>
                         <div class="column">
                             Phone:<br>
@@ -52,7 +52,7 @@
       				<div class="row">
                         <div class="column">
                             Date of Birth:<br>
-                            <input type="date" name="dob">
+                            <input type="date" name="dob" id="testdob" size="25" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" title="dd/mm/yyyy">
                         </div>
       					<div class="column">
       						Designation:<br>
@@ -60,24 +60,24 @@
             			</div>
             			<div class="column">
             				Department:<br>
-    				 		<select name="department" value="Choose department">
-                                <!-- <option value="type" disabled></option> -->
+    				 		<select id="dept-select" name="department" value="Choose department">
+                                <option value="na">N/A</option>
     			  				<option value="web">Web</option>
                                 <option value="ios">IOS</option>
     			  				<option value="android">Android</option>
                                 <option value="cloud">Cloud</option>
                                 <option value="qa">QA</option>
-                                <option value="na">N/A</option>
     						</select>
             			</div>
       				</div>
                     <div class="row row-big">
                         Enquiry:<br>
-                        <textarea name="enquiry" rows="5" cols="30"></textarea>
+                        <textarea name="enquiry" rows="5" cols="37"></textarea>
                     </div>
     				<div class="row">
-    					<input type="submit" name="submit" value="Submit">
-    					<input type="button" onclick="location.href='main.html';" name="cancel" value="Cancel">
+    					<input type="submit" onclick="print-date();" name="submit" value="Submit">
+    					<input type="button" onclick="gomain();" name="cancel" value="Cancel">
+                        <input type="reset" name="clear" value="Clear">
     				</div>
             	</form>
             </div>

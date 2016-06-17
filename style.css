@@ -3,7 +3,7 @@ body {
 }
 header {
     background-color: #b34949;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 1px;
     height: 50px;
@@ -21,7 +21,7 @@ nav {
 }
 footer {
     background-color: #555;
-    color: white;
+    color: #fff;
     clear: both;
     padding: 12px;
 }
@@ -35,9 +35,9 @@ li a {
     display: block;
     color: #000;
     padding-left: 10px;
+    padding-left: 10px;
     text-decoration: none;
 }
-
 /* Change the link color on hover */
 li a:hover {
     background-color: #555;
@@ -46,18 +46,24 @@ li a:hover {
 img {
     width: 310px;
     height: 210px;
-    margin-left: 345px;
-    margin-top: 74px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 section {
-    margin-left: 180px;
+    margin-left: 160px;
     margin-top: 20px;
+    padding-left: 10px;
+}
+textarea {
+    resize: none;
 }
 .row {
     width: 1050px;
     height: 35px;
     display: inline-block;
-    padding: 20px;
+    padding: 19px;
+}
 .row-big {
     height: 100px;
 }
@@ -66,17 +72,30 @@ section {
     height: 50px;
     float: left;
 }
-select {
+#dept-select {
     width: 150px;
     padding: 5px;
     border: none;
     border-radius: 4px;
     background-color: #f1f1f1;
 }
-.desc {
-    padding: 20px;
-    margin-left: 540px;
+#desc {
+    text-align: center;
 }
 #contact-heading {
     margin-left: 400px;
+}
+#img-container {
+    width: 80%;
+    padding: 90px;
+    margin: 0 auto;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #C85E5E;
+    border-radius: 6px;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
